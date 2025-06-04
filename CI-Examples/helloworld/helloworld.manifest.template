@@ -6,7 +6,7 @@
 libos.entrypoint = "/helloworld"
 loader.log_level = "{{ log_level }}"
 
-loader.env.LD_LIBRARY_PATH = "/lib"
+loader.env.LD_LIBRARY_PATH = "/mylib"
 
 fs.mounts = [
   { path = "/mylib", uri = "file:{{ gramine.runtimedir() }}" },
